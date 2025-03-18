@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>bugsweeper</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap">
+        <link rel="stylesheet" type="text/css" href="bugsweeper.css">
+        <script src="bugsweeper.js"></script>
+        <link rel="icon" href="ladybug.png">
+    </head>
+    <body>
+        <div class="game-title">bugsweeper</div>
+        <div class="game-header">
+            <div class="counter" id="mine-counter">040</div>
+            <div class="header-center">
+                <button class="reset-button" id="reset-button">
+                    <img src="ladybug.png" alt="Reset">
+                </button>
+                <button class="settings-toggle" id="settings-toggle">
+                    <img src="PaintBrush.png" alt="Theme">
+                </button>
+            </div>
+            <div class="counter" id="time-counter">000</div>
+        </div>
+
+        <!-- Settings Panel -->
+        <div class="settings-panel" id="settings-panel">
+            <div class="settings-content">
+                <h3>Theme</h3>
+                <div class="theme-options">
+                    <button class="theme-btn" data-theme="spring">🌸 Spring</button>
+                    <button class="theme-btn" data-theme="rain">🌧️ Rain</button>
+                    <button class="theme-btn" data-theme="night">🌙 Night</button>
+                    <button class="theme-btn" data-theme="summer">☀️ Summer</button>
+                    <button class="theme-btn" data-theme="day">🌿 Day</button>
+                    <button class="theme-btn" data-theme="autumn">🍁 Autumn</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mine-wrap"></div>
+        <div class="game-instructions">
+            Click to reveal · Right-click to mark<br>
+            Numbers show nearby surprises
+        </div>
+    </body>
+</html>
